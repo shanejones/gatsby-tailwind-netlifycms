@@ -2,10 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby x Tailwind x NetlifyCMS`,
     description: `Gatsby starter styled with Tailwind`,
-    author: `@sahnejones`
+    author: `@shanejones`
   },
   plugins: [
-    "gatsby-plugin-eslint",
+    `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -15,8 +15,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#4dc0b5`,
-        display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`
+        display: `minimal-ui`
       }
     },
     {
@@ -36,6 +35,7 @@ module.exports = {
         purgeOnly: [`src/css/style.css`]
       }
     },
-    `gatsby-plugin-offline`
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify-cms`
   ]
 };
